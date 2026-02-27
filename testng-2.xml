@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/manav/IdeaProjects/SeleniumATB15x">
+        <classes>
+            <class name="org.example.AppTest">
+                <methods>
+                    <include name="testApp"/>
+                </methods>
+            </class>
+            <class name="org.example.Test_Sel004">
+                <methods>
+                    <include name="test_sel_00"/>
+                </methods>
+            </class>
+            <class name="org.example.sel005Locators">
+                <methods>
+                    <include name="test_app_vwo_com"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
