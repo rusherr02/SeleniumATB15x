@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="TTA Bank Suite" parallel="false">
+<suite name="Katalon Suite" parallel="false">
 
-    <test name="TTA Bank Test">
+    <test name="Katalon Test">
         <classes>
-            <class name="org.example.Tasks.ttaBank"/>
+            <class name="org.example.Tasks.katalan_"/>
         </classes>
     </test>
 
