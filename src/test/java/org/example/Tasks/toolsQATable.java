@@ -1,11 +1,9 @@
 package org.example.Tasks;
 
-import io.qameta.allure.internal.shadowed.jackson.annotation.JsonTypeInfo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -13,14 +11,14 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class appvwoWaits {
+public class toolsQATable {
 
     @Test
-    public void TestAppWwoWaits() {
+    public void TestToolsQATable() {
 
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.navigate().to("https://app.vwo.com/#/login");
+        driver.navigate().to("https://demoqa.com/webtables");
 
 
         WebElement email = driver.findElement(By.id("login-username"));
@@ -36,7 +34,7 @@ public class appvwoWaits {
 
         WebElement login = driver.findElement(By.xpath("//button[@id=\"js-login-btn\"]"));
         login.click();
-
+        
 
         wait.until(
                 ExpectedConditions.visibilityOfElementLocated(By.id("js-notification-box-msg"))
