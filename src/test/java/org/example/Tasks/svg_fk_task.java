@@ -5,6 +5,7 @@ import org.example.CommonToAll;
 import org.example.waitHelpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -18,8 +19,10 @@ public class svg_fk_task extends CommonToAll {
     @Description("")
     @Test
     public void test_fk_svg_icon(){
-        ChromeDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
         openBrowser(driver, "https://www.flipkart.com/search");
+
+//        driver.navigate().refresh();.
 
         WebElement searchInputBox = driver.findElement(By.xpath("//input[@type=\"text\"]"));
         searchInputBox.sendKeys("Macmini");

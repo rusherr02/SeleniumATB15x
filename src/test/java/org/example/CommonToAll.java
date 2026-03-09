@@ -35,6 +35,4 @@ public class CommonToAll extends waitHelpers{
 
 
 
-
-
 }

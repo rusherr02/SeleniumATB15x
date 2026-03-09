@@ -25,7 +25,7 @@ public class waitHelpers {
     }
 
     public static void waitForAlert(WebDriver driver) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(50));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.alertIsPresent());
     }
 
