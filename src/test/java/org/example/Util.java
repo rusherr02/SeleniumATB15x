@@ -3,6 +3,7 @@ package org.example;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.testng.annotations.DataProvider;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -37,6 +38,12 @@ public class Util {
         }
 
         return testData;
+    }
+
+    @DataProvider
+    public Object[][] getDataFromExcel(String sheetName) throws IOException {
+
+        return getTestDataFromExcel(sheetName);
     }
 
 
